@@ -10,7 +10,7 @@ Os integrantes pertencentes a este grupo são:
   - **João Pedro Boiago Gomes Santana** - [JopedroBoiago135](https://github.com/JopedroBoiago135)
 
 # Exemplo Código
-```html
+```cpp
 int main() {
 ;
 }
