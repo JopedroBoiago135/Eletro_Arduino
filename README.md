@@ -1,5 +1,5 @@
 # Eletro_Arduino
-Trabalho II de Eletrônica BCC2023
+Trabalho II de Eletrônica BCC2023 - Arduino
 
 # Membros
 Os integrantes pertencentes a este grupo são:
