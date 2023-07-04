@@ -14,15 +14,11 @@ Os integrantes pertencentes a este grupo são:
 # Componentes Utilizados
 | Quantidade | Componentes                        |   Valor R$   |
 |------------|------------------------------------|--------------|
-| 4          | Diodo                              |   R$ 02,00   |
-| 1          | Capacitor 1mF                      |   R$ 00,50   |
-| 1          | Resistor 5.6k                      |   R$ 00,70   |
-| 1          | Resistor 1.2k                      |   R$ 00,07   |
-| 1          | Potenciômetro  10k                 |   R$ 04,75   |
-| 1          | Diodo Zener (13V)                  |   R$ 00,48   |
-| 1          | Transistor NPN 2N3904              |   R$ 01,60   |
-| 1          | Transformador (127V -> 12V 300mA)  |   R$ 43,20   |
-| 1          | Resistor 120                       |   R$ 00,70   |
+| 1          | Jumpers Macho/Macho                |   R$    |
+| 1          | Módulo Sensor de Som KY-038        |   R$    |
+| 1          | Led 5mm                            |   R$    |
+| 1          | Resistor 150 Ω                     |   R$    |
+| 1          | Arduino UNO R3                     |   R$    |
 | Total      |                                    |   R$    |
 
 # Exemplo Código
