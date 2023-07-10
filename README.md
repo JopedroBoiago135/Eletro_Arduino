@@ -5,7 +5,7 @@ Trabalho II de Eletrônica BCC2023 - Arduino
 Os integrantes pertencentes a este grupo são:
   - 14675441 - **Henrique Drago** - [HenriqueDrago](https://github.com/HenriqueDrago)
   - 14614564 - **Henrique Yukio Sekido** - [Riquey654](https://github.com/Riquey654)
-  - 14681052 - **Arthur Trottmann Ramos** - 
+  - 14681052 - **Arthur Trottmann Ramos** - [ArthurTRamos](https://github.com/ArthurTRamos)
   - 14747211 - **João Pedro Boiago Gomes Santana** - [JopedroBoiago135](https://github.com/JopedroBoiago135)
 
 # Objetivo
