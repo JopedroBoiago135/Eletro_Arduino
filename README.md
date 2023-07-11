@@ -13,12 +13,11 @@ Os integrantes pertencentes a este grupo são:
 # Componentes Utilizados
 | Quantidade | Componentes                        |   Valor R$   |
 |------------|------------------------------------|--------------|
-| 1          | Jumpers Macho/Macho                |   R$    |
-| 1          | Módulo Sensor de Som KY-038        |   R$    |
-| 1          | Led 5mm                            |   R$    |
-| 1          | Resistor 150 Ω                     |   R$    |
-| 1          | Arduino UNO R3                     |   R$    |
-| Total      |                                    |   R$    |
+| 1          | Módulo Sensor de Som KY-038        |   R$ 00,00   |
+| 1          | Led 5mm                            |   R$ 00,00   |
+| 1          | Resistor 150 Ω                     |   R$ 00,00   |
+| 1          | Arduino UNO R3                     |   R$ 00,00   |
+| Total      |                                    |   R$ 00,00   |
 
 # Exemplo Código
 ```cpp
