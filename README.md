@@ -60,8 +60,8 @@ void loop() {
     if((contPalmas > palmasLed) && (digitalRead(led) == LOW)) {
       digitalWrite(led, HIGH);
       contPalmas = 0;
+    }
   }
-}
 }
 ```
 # Vídeo Simulação
