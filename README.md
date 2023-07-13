@@ -62,6 +62,7 @@ void loop() {
       contPalmas = 0;
   }
 }
+}
 ```
 # Vídeo Simulação
 
