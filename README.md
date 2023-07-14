@@ -14,37 +14,37 @@ O projeto foi baseado na contrução de um circuito em Arduino focado em acender
 # Componentes Utilizados
 | Quantidade | Componentes                        |   Valor R$   |
 |------------|------------------------------------|--------------|
-| 1          | Módulo Sensor de Som KY-038        |   R$ 00,00   |
+| 1          | Módulo Sensor de Som KY-038        |   R$ 17,00   |
 | 1          | Led 5mm                            |   R$ 00,50   |
 | 10         | Resistor 150 Ω                     |   R$ 00,70   |
 | 1          | Arduino UNO R3                     |   R$ 108,0   |
-| Total      |                                    |   R$ 00,00   |
+| Total      |                                    |   R$ 126,2   |
 
-# Exemplo Código
+# Código Utilizado
 ```cpp
-int microfone = 13;
-int led = 8;
+int microfone = 13; //Entrada digital do KY-038
+int led = 8; //Saida do sinal do LED
 
 int contPalmas = 0;
 int palmasLed = 0;
 
 unsigned long tempMaxSom = 500;
 unsigned long tempMinSom = 300;
-unsigned long compriSonoro = 100;
+unsigned long compriSonoro = 100; //Tempo de espera para o reconhecimento de sons diferentes
 unsigned long time;
 unsigned long startTime = 0;
 void setup() {
   pinMode(microfone, INPUT);
   pinMode(led, OUTPUT);
-  digitalWrite(led, HIGH); //Inicializa o led
+  digitalWrite(led, HIGH); //Inicializa o led como ligado
 }
 
 void loop() {
-  time = millis();
+  time = millis(); //Toma o tempo desde que o arduino foi ligado
 
-  unsigned long tempoAposPalma = time - startTime;
+  unsigned long tempoAposPalma = time - startTime; //Identifica se o tempo entre 'palmas'
 
-  if(tempoAposPalma >= compriSonoro && digitalRead(microfone) == LOW) {
+  if(tempoAposPalma >= compriSonoro && digitalRead(microfone) == LOW) { //Detecta se o tempo entre 'palmas' foi maior que 100 milisegundos e se o microfone detectou um som
     if(tempoAposPalma < tempMinSom || tempoAposPalma > tempMaxSom) {
       contPalmas = 0;
       startTime = millis();
@@ -64,5 +64,6 @@ void loop() {
   }
 }
 ```
+
 # Vídeo Simulação
 
