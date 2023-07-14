@@ -44,9 +44,11 @@ void loop() {
 
   unsigned long tempoAposPalma = time - startTime; //Identifica se o tempo entre 'palmas'
 
-  if(tempoAposPalma >= compriSonoro && digitalRead(microfone) == LOW) { //Detecta se o tempo entre 'palmas' foi maior que 100 milisegundos e se o microfone detectou um som
+  if(tempoAposPalma >= compriSonoro && digitalRead(microfone) == LOW) {
+  //Detecta se o tempo entre 'palmas' foi maior que 100 milisegundos e se o KY-038 detectou um som
     if(tempoAposPalma < tempMinSom || tempoAposPalma > tempMaxSom) {
       contPalmas = 0;
+      //Reinicia a contagem se o tempo entre 'palmas' foi curto/longo demais
       startTime = millis();
     }
     else {
