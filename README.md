@@ -22,11 +22,11 @@ O projeto foi baseado na contrução de um circuito em Arduino focado em acender
 
 # Exemplo Código
 ```cpp
-int microfone = 12;
+int microfone = 13;
 int led = 8;
 
 int contPalmas = 0;
-int palmasLed = 2;
+int palmasLed = 0;
 
 unsigned long tempMaxSom = 500;
 unsigned long tempMinSom = 300;
@@ -36,7 +36,7 @@ unsigned long startTime = 0;
 void setup() {
   pinMode(microfone, INPUT);
   pinMode(led, OUTPUT);
-  digitalWrite(led, LOW); //Inicializa o led
+  digitalWrite(led, HIGH); //Inicializa o led
 }
 
 void loop() {
@@ -44,7 +44,7 @@ void loop() {
 
   unsigned long tempoAposPalma = time - startTime;
 
-  if(tempoAposPalma >= compriSonoro && digitalRead(microfone) == HIGH) {
+  if(tempoAposPalma >= compriSonoro && digitalRead(microfone) == LOW) {
     if(tempoAposPalma < tempMinSom || tempoAposPalma > tempMaxSom) {
       contPalmas = 0;
       startTime = millis();
