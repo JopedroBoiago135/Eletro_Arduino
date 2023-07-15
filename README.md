@@ -80,3 +80,7 @@ void loop() {
 
 [![Vídeo - Arduino](https://i9.ytimg.com/vi_webp/PcfJkV2sYtg/mq2.webp?sqp=CPj_x6UG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEMgUyhlMA8=&rs=AOn4CLA6LtVWVKkF0Sxnb3YBJvByR56v2g)](https://youtu.be/PcfJkV2sYtg)
 
+# Agradecimentos
+- Agradecemos ao [Prof Simões](https://github.com/simoesusp) (vulgo Simas), pelos ensinamentos de eletronica e de como soldar;
+- Ao empenho do grupo ao decorrer de todo o trabalho e esforço.
+
