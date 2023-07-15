@@ -31,7 +31,7 @@ int palmasLed = 0;
 unsigned long tempMax = 500; //Tempo max entre 'palmas'
 unsigned long tempMin = 300; //Tempo min entre 'palmas'
 unsigned long espera = 100; //Tempo de espera para o reconhecimento de sons diferentes
-unsigned long time;
+unsigned long tempo;
 unsigned long startTime = 0;
 
 void setup() {
@@ -41,10 +41,10 @@ void setup() {
 }
 
 void loop() {
-  time = millis(); //Toma o tempo atual deste ciclo
+  tempo = millis(); //Toma o tempo atual deste ciclo
   //OBS: millis() retorna a quantia de tempo decorrida desde a ativação do sistema
 
-  unsigned long tempAfterPalma = time - startTime; //Identifica o tempo entre 'palmas'
+  unsigned long tempAfterPalma = tempo - startTime; //Identifica o tempo entre 'palmas'
 
   if(tempAfterPalma >= espera && digitalRead(microfone) == LOW) {
   //Detecta se o tempo entre 'palmas' foi maior que 100 milisegundos e se o KY-038 detectou um som
