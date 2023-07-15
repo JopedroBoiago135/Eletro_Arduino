@@ -28,9 +28,9 @@ int led = 8; //Saida do sinal do LED
 int contPalmas = 0;
 int palmasLed = 0;
 
-unsigned long tempMaxSom = 500; //Tempo max entre 'palmas'
-unsigned long tempMinSom = 300; //Tempo min entre 'palmas'
-unsigned long compriSonoro = 100; //Tempo de espera para o reconhecimento de sons diferentes
+unsigned long tempMax = 500; //Tempo max entre 'palmas'
+unsigned long tempMin = 300; //Tempo min entre 'palmas'
+unsigned long espera = 100; //Tempo de espera para o reconhecimento de sons diferentes
 unsigned long time;
 unsigned long startTime = 0;
 
@@ -44,11 +44,11 @@ void loop() {
   time = millis(); //Toma o tempo atual deste ciclo
   //OBS: millis() retorna a quantia de tempo decorrida desde a ativação do sistema
 
-  unsigned long tempoAposPalma = time - startTime; //Identifica o tempo entre 'palmas'
+  unsigned long tempAfterPalma = time - startTime; //Identifica o tempo entre 'palmas'
 
-  if(tempoAposPalma >= compriSonoro && digitalRead(microfone) == LOW) {
+  if(tempAfterPalma >= espera && digitalRead(microfone) == LOW) {
   //Detecta se o tempo entre 'palmas' foi maior que 100 milisegundos e se o KY-038 detectou um som
-    if(tempoAposPalma < tempMinSom || tempoAposPalma > tempMaxSom) {
+    if(tempAfterPalma < tempMin || tempAfterPalma > tempMax) {
       contPalmas = 0;
       //Reinicia a contagem se o tempo entre 'palmas' foi curto/longo demais
       startTime = millis();
